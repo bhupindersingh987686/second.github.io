@@ -1,0 +1,430 @@
+<html>
+<head>
+<title>gallery</title>
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="skull/lightbox.min.css">
+<script src="skull/lightbox-plus-jquery.min.js"></script>
+
+<style type="text/css">
+
+*
+{
+margin: 0px;
+padding: 0px;
+box-sizing:border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+overflow-x:hidden;
+margin:0px;
+}
+
+
+div.outer_div
+{
+background:#252525;
+height: 12%;
+}
+
+div.website_logo_image
+{
+width: 2%;
+height: 100%;
+float: left;
+text-align: center;
+padding-top: 2%;	
+margin-left: 2%;
+}
+
+div.website_logo
+{
+line-height: 75px;
+width: 20%;
+float: left;
+padding-left: 1%;
+}	
+
+div.website_logo span
+{
+font-size: 2.1vw;
+font-weight: bold;	
+color:#BE5869;
+/*text-shadow: 2px 2px 2px black;*/
+}
+
+div.header
+{
+line-height: 75px;
+float: right;
+width: 60%;
+}
+
+div.header ul
+{
+
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+}
+
+div.header ul li
+{
+list-style:none;
+font-weight:bold;
+font-size: 1vw;
+}
+
+a
+{
+text-decoration: none;color:white;
+}
+
+
+div.straight_line
+{
+background-color:#5AC197;
+width:1360px;
+height:1px;
+margin-top: 60px;
+}
+
+
+/*styling of images and the div*/
+div.container1
+{
+margin-left: 100px;
+margin-right: 50px;
+
+}
+img.kite
+{
+width: 230px;
+height: 200px;
+margin-left: 50px;
+margin-top: 30px;
+border: 1px solid black;
+transition: all 300ms ease-in-out 0s; 
+}
+
+img.kite:hover
+{
+transform: scale(1.1);
+}
+
+
+
+/*end of styling of images and the div*/
+
+
+
+
+
+
+
+
+
+/*styling of footer*/
+div.big2
+{
+display: grid;
+grid-template-columns: 23% 23% 28% 23%;
+width:100%;
+height: 270px;
+border-top: 1px solid #5AC197;
+border-bottom: 1px solid #5AC197;
+background-color: black;
+margin-top:170px ;
+
+
+}
+
+div.website_symbol_footer
+{
+margin: 0px;
+padding: 0px;
+
+width: 300px;
+height: 210px;
+position:relative;
+left:30px;
+top:40px;	
+}
+
+h6.footer3
+{
+font-size: 12px;
+line-height:0px;
+position: relative;
+bottom: 10px;
+margin-top:20px;
+color: white;
+top: 9px;
+}
+
+h6.footer1
+{
+font-size: 12px;
+line-height:0px;
+position: relative;
+bottom: 10px;
+margin-top:20px;
+color: #5AC197;
+top: 5px;
+}
+
+h6.footer2
+{
+letter-spacing: 0.1px;
+font-size: 12px;
+line-height:0px;
+position: relative;
+bottom: 10px;
+margin-top:20px;
+color: white;
+top: 12px;
+}
+
+h6.footer
+{
+
+font-size: 10px;
+line-height:0px;
+position: relative;
+margin-top:20px;
+color: white;
+}
+
+h6.footer2:hover
+{
+color:#5AC197 ;
+}
+
+h6.footer3:hover
+{
+color:#5AC197 ;
+}
+
+a.footer
+{
+text-decoration: none;
+}
+
+
+#twitter
+{
+color:white;
+position:relative;
+position: relative;
+right: 5px;
+}
+#facebook
+{
+color:white;
+position: relative;
+right: 5px;
+}
+
+#instagram
+{
+color:white;
+position: relative;
+right: 5px;
+}
+
+#youtube
+{
+color:white;
+position:relative;
+right: 5px;
+}
+
+
+
+#twitter:hover
+{
+color: #5AC197;
+}
+
+#facebook:hover
+{
+color: #5AC197;
+}
+
+#instagram:hover
+{
+color: #5AC197;
+}
+
+#youtube:hover
+{
+color: #5AC197;
+}
+.search_textbox
+{
+
+/*textbox alignment*/
+position:relative;
+top: 30px;
+
+/*content*/
+font-size:12px;
+
+/*padding*/
+padding:10px;
+
+/*border*/
+border: 1px solid black;
+
+width:200px;
+
+/*border-radius property allow us to add rounded corners to elements */
+border-radius:10px 0px 0px 10px;
+
+/*it will remove the blue glowing outline aroung the edge*/
+outline:none;
+}
+
+
+
+
+.search_button
+{
+color:#5AC197;
+
+position:relative;
+top: 30px;
+right: 5px;
+/*content*/
+font-size:12px;
+
+/*padding*/
+padding:10px;
+
+/*border*/
+border: 1px solid black;
+cursor:pointer;
+
+/*border-radius property allow us to add rounded corners to elements */
+border-radius:0px 10px 10px 0px;
+
+/*it will remove the blue glowing outline aroung the edge*/
+outline:none;
+}
+/*end of styling of footer*/
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="outer_div">
+
+<div class="website_logo_image" >
+<a href="home(copy2).php"><img style="width: 100%;height: 50%;" src="heart_logo.png"></a>
+</div>
+
+<div class="website_logo">
+<a href="home(copy2).php"><span>Skull Love</span></a>
+</div>
+
+<div class="header">
+<ul>
+<a href="home(copy2).php"><li>HOME</li></a>
+<a href="home(copy2).php"><li>SERVICES</li></a>
+<a href="home(copy2).php"><li>ABOUT US</li></a>
+<a href="home(copy2).php"><li>CONTACT US</li></a>
+</ul>
+</div></div>
+
+<div class="slider" >
+</div>
+
+<div class="slider" >
+</div>
+
+<div class="straight_line"></div>
+<div class="container1">
+
+<a href="skull/skull8.jpg" data-lightbox="mygallery" ><img class="kite" src="skull/skull8.jpg"> </a>
+<a href="skull/skull2.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull2.jpg"> </a>
+<a href="skull/skull3.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull3.jpg"> </a>
+<a href="skull/skull4.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull4.jpg"> </a>
+<a href="skull/skull5.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull5.jpg"> </a>
+<a href="skull/skull6.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull6.jpg"> </a>
+<a href="skull/skull7.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull7.jpg"> </a>
+<a href="skull/skull.jpg" data-lightbox="mygallery"><img class="kite" src="skull/skull.jpg"> </a>
+
+</div>
+
+
+
+<!--footer-->
+<div class="big2">
+
+<div class="website_symbol_footer" >
+<a href="home.php"><img class="website_symbol_footer" style="width: 20px;margin-top: 10px" src="heart_logo.png"></a></img>
+<span style="color: white">Skull Love</span>
+<a class="footer" href="contactus.php"><h6 class="footer3">CONTACT US</h6></a>
+<br><br>
+<br>
+<h6 class="footer">© 2019 Skull Love | All Rights Reserved.</h6>
+</div>
+
+
+<div class="website_symbol_footer">
+<h6 class="footer1">USEFUL LINKS</h6>
+<a class="footer" href="home.php"><h6 class="footer2">Home</h6></a>
+<a class="footer" href="services.php"><h6 class="footer2">Services</h6></a>
+<a class="footer" href="aboutus.php"><h6 class="footer2">About us</h6></a>
+<a class="footer" href="contactus.php"><h6 class="footer2">Contact us</h6></a>
+</div>
+
+
+<div class="website_symbol_footer" >
+<h6 class="footer1">MY ACCOUNT</h6>
+<a class="footer" href="login.php"><h6 class="footer2">Login</h6></a>
+<a class="footer" href="signup.php"><h6 class="footer2">Sign up</h6></a>
+<br>
+<h6 class="footer1">SOCIAL MEDIA</h6>
+<a href="https://twitter.com/login/" class="footer"><span id="twitter" class="fa-stack fa-lg" >
+  <i class="fas fa-circle fa-stack-2x" style="font-size:40px"></i>
+  <i  class="fab fa-twitter fa-stack-1x fa-inverse" style="font-size:25px;color:black"></i>
+</span></a>
+
+<a href="https://www.facebook.com/" class="footer"><span id="facebook" class="fa-stack fa-lg">
+  <i class="fas fa-circle fa-stack-2x" style="font-size:40px"></i>
+  <i  class="fab fa-facebook-f fa-stack-1x" style="font-size:25px;color:black"></i>
+</span></a>
+
+<a href="https://www.instagram.com/" class="footer"><span id="instagram" class="fa-stack fa-lg">
+  <i class="fas fa-circle fa-stack-2x" style="font-size:40px"></i>
+  <i  class="fab fa-instagram fa-stack-1x fa-inverse" style="font-size:25px;color:black"></i>
+</span></a>
+
+<a href="https://www.youtube.com/" class="footer"><span id="youtube" class="fa-stack fa-lg">
+  <i class="fas fa-circle fa-stack-2x" style="font-size:40px"></i>
+  <i class="fab fa-youtube fa-stack-1x fa-inverse" style="font-size:25px;color:black"></i>
+</span></a>
+</div>
+
+<div class="website_symbol_footer">
+<form action="search.php" method="get">
+<input type="textbox" name="q" placeholder="search here"  class="search_textbox" > 
+<input type="submit"  name="search" value="search" class="search_button"> 
+</form>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
