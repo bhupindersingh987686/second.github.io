@@ -1,11 +1,8 @@
-<!DOCTYPE html>
 <html>
-<title>Frugal Testing Assignment</title>
-
+<head>
+<title>Home</title>
 <meta name="viewport" content="width=device-width">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
-
 <style type="text/css">
 
 *
@@ -16,441 +13,151 @@ box-sizing:border-box;
 font-family: 'Montserrat', sans-serif;
 }
 
-body
+div.outer_div
 {
-overflow-x: hidden;
-box-sizing:border-box;
+background:linear-gradient(57deg,#000000,#FFA69E);
+clip-path: polygon(0% 0% ,100% 0%, 100% 75%,0% 100%);
+height: 100vh;
 }
 
-div.header	
+div.website_logo_image
 {
-/*border:2px solid red;*/
-display: grid;
-grid-template-columns: 30% 70%;
-grid-template-rows: 60px ;
-box-shadow: 20px 0px 8px #888888;
-position: sticky;
-top: 0;
-background-color: white;
-z-index: 10;
+width: 2%;
+height: 15%;
+float: left;
+text-align: center;
+padding-top: 2.7%;	
+margin-left: 2%
 }
 
-div.logo
+div.website_logo
 {
-/*border:2px solid black;*/
-grid-column: 1;
-grid-row: 1;
-}
+line-height: 100px;
+width: 20%;
+float: left;
+padding-left: 1%;
 
-img
-{
-margin-top: 10px;
-width: 47%;
-height: 70%;
-margin-left: 70px;
-}
-
-img:hover
-{
-cursor: pointer;
 }	
 
-div.nav_bar
+div.website_logo span
 {
-grid-column: 2;
-/*border:2px solid black;*/
-padding-left: 150px;
+font-size: 2.1vw;
+font-weight: bold;	
+color:#BE5869;
+/*text-shadow: 2px 2px 2px black;*/
 }
 
-ul
+div.header
 {
-margin-top: 24px;
-display: flex;
-flex-direction: row;
+line-height: 100px;
+float: right;
+width: 60%;
+}
+
+div.header ul
+{
+
+display:flex;
+flex-direction:row;
 justify-content: space-around;
-font-weight: bold;
-font-size: 90%;
 }
 
-li
+div.header ul li
 {
-list-style: none;
+list-style:none;
+font-weight:bold;
+font-size: 1vw;
+}
+
+div.left_side_image_div
+{
+box-shadow:0px 0px 10px 6px;
+float: left;
+width: 24%;
+margin-left: 2%;
+margin-right: 5%;
+margin-top:3%;
+}
+
+img.love
+{
+width: 100%;
+}
+
+div.left_side_image_div:hover
+{
+transform:scale(1.02);
+transition: all 0.5s ease;
+}
+
+div.right_side
+{
+font-size: 1.7vw;
+float:right;
+margin-top:10.5%;
+padding-right: 10%;
+color:white;	
+}
+
+div.right_side button
+{
+margin-left: 35%;
+font-size: 1.2vw;
+padding: 15px;
+border-radius: 4px;
+outline: none;
+background: linear-gradient(57deg,#FFA69E,#BE5869);
+color:white;
+}
+
+div.right_side button:hover
+{
+background:linear-gradient(57deg,#BE5869,#FFA69E);
+cursor:pointer;
 }
 
 a
 {
-text-decoration: none;
+text-decoration:none;
 color:black;
 }
 
-button.navButton
-{
-cursor: pointer;
-background-color: #45AED6;
-padding: 4px;
-padding-top: 8px;
-padding-bottom: 8px;
-border-radius: 10px;
-font-weight: bold;
-color: white;
-margin-top: -10px;
-}
-
-.navButton:hover
-{
-background-color: #2A95BE;
-}
-
-div.search_bar
-{
-/*border:1px solid black;*/
-height: 60px;
-max-width:100%;
-min-width: 60%;
-margin-top: 10px;
-}
-
-.searchbar
-{
-margin-left: 50px;
-margin-top: 5px;
-font-size: 25px;
-padding: 5px;
-padding-left: 20px;
-border-radius:20px 0px 0px 20px;
-outline: none;
-width: 80%;
-
-}
-
-.searchbar:hover
-{
-transform: scale(1.01);
-}
-
-.searchButton
-{
-cursor: pointer;
-padding: 5px;
-padding-top: 8px;
-padding-bottom: 8px;
-border-radius:0px 20px 20px 0px;
-font-size: 20px;
-color: black;
-position: relative;
-bottom: 1.7px;
-}
-
-
-
-div.heading_of_topic
-{
-/*border:2px solid red;*/
-display: grid;
-grid-template-columns: 100%;
-grid-template-rows: 70px 70px 70px;
-}
-
-div.one
-{
-/*border:2px solid red;*/
-grid-row: 1;
-}
-
-h3.date
-{
-font-weight: bold;
-font-size: 15px;
-margin-left: 55px;
-margin-top: 10px;
-margin-bottom: 10px;
-/*border-bottom: 2px solid black;*/
-}
-
-
-button.agile
-{
-background-color: #6C757D;
-color:white;
-border-radius: 10px;
-margin-left: 55px;
-margin-right: 10px;
-padding-left: 25px;
-padding-right: 25px;
-border:none;
-cursor: pointer;
-outline: none;
-}
-
-button.sdlc
-{
-background-color: #6C757D;
-color:white;
-border-radius: 10px;
-padding-left: 25px;
-padding-right: 25px;
-border:none;
-cursor: pointer;
-outline: none;
-}
-
-div.two
-{
-/*border:2px solid red;*/
-grid-row: 2;
-}
-
-div.three
-{
-/*border:2px solid red;*/
-grid-row: 3;
-}
-
-
-div.body
-{
-display: grid;
-grid-template-columns: 70% 30%;
-grid-template-rows: 400px ;
-margin-top: 40px;
-}
-
-div.main_content
-{
-/*border:1px solid red;*/
-grid-row: 1;
-grid-column: 1;
-
-}
-
-div.sidebar
-{
-/*border:1px solid red;*/
-grid-row: 1;
-grid-column: 2;
-}
-
-div.footer
-{
-background: linear-gradient(50deg,#2CB1D2,#4F4F9F);
-/*border:1px solid red;*/
-display: grid;
-grid-template-columns: 100%;
-grid-template-rows: 150px;
-margin-top: 80px;
-}
-
-div.newsletter
-{
-grid-row: 1;
-/*border:1px solid green;*/
-margin:10px auto;
-color: white;
-}
-
-div.foot
-{
-/*border:1px solid red;*/
-background-color: #2E2E2E;
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-template-rows: 200px;
-padding-top: 20px;
-}
-
-div.product
-{
-/*border:1px solid red;*/
-height: 200px;
-grid-column: 1;
-padding-left: 100px;
-}
-
-div.services
-{
-/*border:1px solid red;*/
-grid-column: 2;
-padding-left: 30px;
-}
-
-div.about
-{
-/*border:1px solid red;*/
-grid-column: 3;
-padding-left: 30px;
-}
-
-div.company
-{
-/*border:1px solid red;*/
-grid-column: 4;
-padding-left: 30px;
-}
-
-div.social
-{
-border:1px solid black;
-background-color: #2E2E2E;
-padding-bottom: 30px;
-}
-
-
-
 </style>
 
-<script type="text/javascript">
-alert("with HTML , CSS and javascript , Name:Bhupinder singh , regno=11911105");	
-</script>
 </head>
-
 <body>
 
+<div class="outer_div">
+
+<div class="website_logo_image" >
+<a href="home(copy2).php"><img style="width: 100%;height: 39.9%;" src="heart_logo.png"></a>
+</div>
+
+<div class="website_logo">
+<a href="home(copy2).php"><span>Skull Love</span></a>
+</div>
 
 <div class="header">
-
-<!--logo-->
-<div class="logo">
-<img src="logo.png">
-</div>
-
-<!--navigation bar-->
-<div class="nav_bar" >
 <ul>
-<a href="home.html"><li>HOME</li></a>
-<a href="home.html"><li>FEATURES</li></a>
-<a href="home.html"><li>SERVICES</li></a>
-<a href="home.html"><li>PRICING</li></a>
-<a href="home.html"><li>BLOG</li></a>
-<a href="home.html"><li>ABOUT</li></a>
-<a href="home.html"><li>LOGIN</li></a>
-<button class="navButton">REQUEST A DEMO</button>
+<a href="home(copy2).php"><li>HOME</li></a>
+<a href="home(copy2).php"><li>SERVICES</li></a>
+<a href="home(copy2).php"><li>ABOUT US</li></a>
+<a href="home(copy2).php"><li>CONTACT US</li></a>
 </ul>
 </div>
 
+<!--br><br-->
+
+<div class="left_side_image_div" >
+<img class="love" src="skull11.png">  
 </div>
 
-
-
-
-<div class="search_bar">
-<input placeholder="search...." class="searchbar" type="text" name="searchbar"><button class="searchButton">Search</button>
-</div>
-
-
-
-<div class="heading_of_topic">
-
-<div class="one">
-<h3 class="date">2019 / OCTOBER / 22</h3><div style="border: 1px solid black;width: 200px;margin-left: 55px;position: relative;bottom: 7px"></div>
-<button class="agile">AGILE</button><button class="sdlc">SDLC</button>
-</div>
-
-<div class="two">
-<h2 style="margin-left: 55px;margin-top: 20px">What is Agile Methodology in SDLC</h2>
-</div>
-
-<div class="three">
-
-<div >
-<img src="poster.png" style="width: 120px;height: 50px">
-</div>
-
-</div>
-
-</div>	
-
-
-<div class="body">
-
-<div class="main_content">
-<img src="agile-methodology-in-SDLC.jpg" style="width:80%;height: 90%">
-</div>
-
-
-<div class="sidebar">
-<h3 style="margin-top: 20px;">RECENT BLOG</h3><div style="border: 1px solid black;width: 200px;margin-left: 55px;position: relative;left:100px;bottom: 15px"></div>
-
-</div>
-
-</div>
-
-
-<div style="padding: 20px;padding-left:55px;padding-right: 460px">
-<h3 style="margin-bottom: 20px">What is Agile Methodology?</h3>
-<p style="font-size: 20px;line-height: 27px">Agile Methodology is basically the combination of incremental and iterative process model where process adaptability and customer satisfaction by rapid delivery of the software are focal points.</p><br>
-
-<p style="font-size: 20px;line-height: 27px">Every iteration involves teams working on various areas like:
-<br><br>
-1.) Planning<br>
-2.) Requirement Analysis<br>
-3.) Design<br>
-4.) Coding (Development)<br>
-5.) Testing<br>
-6.) User Acceptance Testing</p>
-</div>
-
-
-<div class="footer">
-
-<div  class="newsletter">
-<h1 style="margin-bottom: 20px">SUBSCRIBE TO OUR NEWSLETTER</h1>
-<input placeholder="Enter your E-mail" style="border:2px solid black;width: 70%;border-radius: 10px 0px 0px 10px;font-size: 18px;padding: 10px;padding-left: 20px;outline: none;margin-right: 0px" type="text" name="sub"><button style="cursor: pointer;padding: 10px;border-radius:0px 20px 20px 0px;font-size: 18px;color: black;">Subscribe Now</button>
-</div>
-</div>
-
-<div class="foot">
-
-<div class="product" style="color: white">
-
-<h3 style="margin-bottom: 10px">PRODUCT</h3>
-<ul style="display: inline;line-height: 22px">
-<li >Features</li>
-<li >Pricing</li>
-</ul>
-
-</div>
-	
-<div class="services" style="color: white">
-
-<h3 style="margin-bottom: 10px">SERVICES</h3>
-<ul style="display: inline;line-height: 22px">
-<li>Functional Testing</li>
-<li>Automation Testing</li>
-<li>Performance Testing</li>
-<li>Mobile Testing</li>
-<li>Security Testing</li>
-<li>Compatibility Testing</li>
-</ul>
-
-</div>
-
-<div class="about" style="color: white">
-<h3 style="margin-bottom: 10px">ABOUT</h3>
-<ul style="display: inline;line-height: 22px">
-<li>Case Studies</li>
-<li>Our Team </li>
-<li>Careers</li>
-<li>Contact Us</li>
-</div>
-
-<div class="company" style="color: white"> 
-
-<h3 style="margin-bottom: 10px">COMPANY</h3>
-<ul style="display: inline;line-height: 22px">
-<li>Privacy Policy</li>
-<li>Terms of Service </li>
-
-</div>
-
-</div>
-
-
-
-<div class="social">
-
-<img src="poster2.png" style="width: 15%;height: 80px;display: block;margin-left: auto;margin-right: auto;">	
-<h3 style="color: white;font-size: 15px;font-weight: lighter;text-align: center;">©2020 ALL RIGHTS RESERVED. FRUGAL PRODUCT SERVICES LLP.</h3>
-
+<div class="right_side">
+<h1 style="text-shadow:2px 2px 2px black">FIND YOUR LOVE</h1>
+<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSkull Images</h3><br><br>
+<a href="gallery.php">
+<button >Welcome</button>
+</a>
 </div>
 
 </div>
