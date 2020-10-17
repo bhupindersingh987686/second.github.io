@@ -1,125 +1,183 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width">
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<style type="text/css">
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<title>Home</title>
+    
+<style>
 *
 {
 margin: 0px;
 padding: 0px;
 box-sizing:border-box;
 font-family: 'Montserrat', sans-serif;
+
 }
 
-div.outer_div
+body
 {
-background:linear-gradient(57deg,#000000,#FFA69E);
-clip-path: polygon(0% 0% ,100% 0%, 100% 75%,0% 100%);
-height: 100vh;
+overflow-x: hidden;
+box-sizing:border-box;
+background: url(bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed; 
 }
 
-div.website_logo_image
+div.header	
 {
-width: 2%;
-height: 15%;
-float: left;
-text-align: center;
-padding-top: 2.7%;	
-margin-left: 2%
+/* border:2px solid red; */
+display: grid;
+grid-template-columns: 30% 70%;
+grid-template-rows: 75px ;
+box-shadow: 20px 0px 8px #000000;
+position: sticky;
+top: 0;
+z-index: 10;
+background:rgba(0,0,0,0.6);
+/*opacity: 0.2;*/
+color: white;
 }
 
-div.website_logo
+div.logo
 {
-line-height: 100px;
-width: 20%;
-float: left;
-padding-left: 1%;
+/* border:2px solid red; */
+grid-column: 1;
+grid-row: 1;
+}
 
+img
+{
+position: relative;
+bottom: 29px;
+margin-left: 35px;
+width: 135px;
+height: 142px;
+}
+
+img:hover
+{
+cursor: pointer;
 }	
 
-div.website_logo span
+div.nav_bar
 {
-font-size: 2.1vw;
-font-weight: bold;	
-color:#BE5869;
-/*text-shadow: 2px 2px 2px black;*/
+grid-column: 2;
+/*border:2px solid black;*/
+padding-left: 150px;
 }
 
-div.header
+ul
 {
-line-height: 100px;
-float: right;
-width: 60%;
-}
-
-div.header ul
-{
-
-display:flex;
-flex-direction:row;
+margin-top: 40px;
+display: flex;
+flex-direction: row;
 justify-content: space-around;
+/*font-weight: bolder;
+*/font-size: 90%;
+opacity: 1;
 }
 
-div.header ul li
+li
 {
-list-style:none;
-font-weight:bold;
-font-size: 1vw;
+list-style: none;
+color:white;
+font-weight: bold;
 }
 
-div.left_side_image_div
+li:hover
 {
-box-shadow:0px 0px 10px 6px;
-float: left;
-width: 24%;
-margin-left: 2%;
-margin-right: 5%;
-margin-top:3%;
+color:pink;
 }
 
-img.love
+a
 {
-width: 100%;
+text-decoration: none;
+color:black;
 }
 
-div.left_side_image_div:hover
+h1
 {
-transform:scale(1.02);
-transition: all 0.5s ease;
+margin-top: 200px;
+margin-left: 50px;
+margin-bottom: 20px;
+color:pink;
+text-transform:uppercase;
+letter-spacing:3px;
+font-weight: bolder;
+font-weight:400;text-shadow:72px -22px 5px black
+}
+ 
+.textfield
+{
+border:none;
+outline:none;
+background:none;
+color:white;
+margin:0 10px;
+width:24%;
+font-size:18px;
+padding:8px 0;
+margin:8px 0;
+border-bottom:1px solid pink;
+margin-left: 50px;
 }
 
-div.right_side
+.textfield:hover
 {
-font-size: 1.7vw;
-float:right;
-margin-top:10.5%;
-padding-right: 10%;
-color:white;	
+transform:scale(1.01);
 }
 
-div.right_side button
+.btn
 {
-margin-left: 35%;
-font-size: 1.2vw;
-padding: 15px;
-border-radius: 4px;
+margin-left: 10%;
+margin-top: 30px;
+font-size: 17px;
+padding: 14px;
+border-radius: 5px;
 outline: none;
 background: linear-gradient(57deg,#FFA69E,#BE5869);
 color:white;
 }
 
-div.right_side button:hover
+.btn:hover
 {
 background:linear-gradient(57deg,#BE5869,#FFA69E);
 cursor:pointer;
 }
 
-a
+
+
+/*Mobiles*/
+/*@media screen and (max-width: 480px)
 {
-text-decoration:none;
-color:black;
+ul
+{
+display: none;
+}
+}
+*/
+
+/*Tablets*/
+@media screen and (max-width: 800px)
+{
+
+ul
+{
+font-size: 11px;
+}
+
+img
+{
+width: 107px;
+height: 122px;
+bottom:20px;
+}
+
 }
 
 </style>
@@ -127,40 +185,38 @@ color:black;
 </head>
 <body>
 
-<div class="outer_div">
-
-<div class="website_logo_image" >
-<a href="index.html"><img style="width: 100%;height: 39.9%;" src="heart_logo.png"></a>
-</div>
-
-<div class="website_logo">
-<a href="index.html"><span>Skull Love</span></a>
-</div>
-
 <div class="header">
+
+<!--logo-->
+<div class="logo" >
+<a href="index.html"><img src="logo.png"></a>
+</div>
+
+<!--navigation bar-->
+<div class="nav_bar" >
 <ul>
 <a href="index.html"><li>HOME</li></a>
-<a href="index.html"><li>SERVICES</li></a>
-<a href="index.html"><li>ABOUT US</li></a>
-<a href="index.html"><li>CONTACT US</li></a>
+<a href="#"><li>FEATURES</li></a>
+<a href="#"><li>SERVICES</li></a>
+<a href="#"><li>PRICING</li></a>
+<a href="#"><li>BLOG</li></a>
+<a href="#"><li>ABOUT</li></a>
+<a href="#"><li>LOGIN</li></a>
+<!-- <button class="navButton">REQUEST A DEMO</button> -->
 </ul>
 </div>
 
-<!--br><br-->
-
-<div class="left_side_image_div" >
-<img class="love" src="skull11.png">  
 </div>
 
-<div class="right_side">
-<h1 style="text-shadow:2px 2px 2px black">BEST SKULL IMAGES</h1>
-<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSkull Images</h3><br><br>
-<a href="gallery.html">
-<button >Welcome</button>
-</a>
-</div>
 
-</div>
+
+<div>
+<h1 >Welcome to our website</h1>
+
+<form action="gallery.html" method="get" accept-charset="utf-8">
+<input type="submit" class="btn" value="  Welcome  ">
+</form>
+
 
 
 </body>
